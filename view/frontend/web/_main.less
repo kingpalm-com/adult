@@ -1,308 +1,50 @@
 // 2019-07-02
 // "Request the «I am at least 18 years old» confirmation from visitors as on swishersweets.com":
 // https://github.com/kingpalm-com/core/issues/8
-button.btn-checkout span, button.btn-checkout span:hover {
-	background-color: #5a9842 !important;
-	border-color: #5a9842 !important;
-}
-#age-check-prompt > ul li {
-	font-size: 14px;
-	list-style: outside none disc;
-	margin-bottom: 0px;
-	color: #000000;
-}
-.modal-prompt .action.login.primary {
-	background: #5a9842 none repeat scroll 0 0;
-	border-radius: 0 !important;
-	font-size: 17px;
-}
-.modal-prompt .action.login.primary:hover {
-	color: #ffffff;
-}
-@media (max-width: 479px) {
-	.modal-prompt {
-		width: 90% !important;
-		top: 15%;
-	}
-}
-.modal-prompt {
-	background: rgba(255, 255, 255, 0.9);
-	border-radius: 2px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-	width: 400px;
-	height: auto;
-	margin: 0 auto;
-	padding: 20px 35px 30px 35px;
-	position: relative;
-	top: 25%;
-	z-index: 1000000;
-	right: 0%;
-}
-.modal-prompt p, .modal-prompt h1 {
-	color: #555555;
-}
 .kingpalm-adult-popup {
-	background: #000;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 9999999;
-}
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	background: #000; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 9999999;
+	button.btn-checkout span, button.btn-checkout span:hover {
+		background-color: #5a9842 !important;
+		border-color: #5a9842 !important;
 	}
-}
-/* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	#age-check-prompt > ul li {
+		font-size: 14px;
+		list-style: outside none disc;
+		margin-bottom: 0px;
+		color: #000000;
 	}
-}
-/* Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	.modal-prompt .action.login.primary {
+		background: #5a9842 none repeat scroll 0 0;
+		border-radius: 0 !important;
+		font-size: 17px;
 	}
-}
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	.modal-prompt .action.login.primary:hover {
+		color: #ffffff;
 	}
-}
-/* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	@media (max-width: 479px) {
+		.modal-prompt {
+			width: 90% !important;
+			top: 15%;
+		}
 	}
-}
-/* Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	.modal-prompt {
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 2px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		width: 400px;
+		height: auto;
+		margin: 0 auto;
+		padding: 20px 35px 30px 35px;
+		position: relative;
+		top: 25%;
+		z-index: 1000000;
+		right: 0%;
 	}
-}
-/* ----------- iPhone 6 ----------- */
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	.modal-prompt p, .modal-prompt h1 {
+		color: #555555;
 	}
-}
-/* Portrait */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
+	.modal-prompt select {
+		float: left;
+		margin-right: 10px;
 	}
-}
-/* Landscape */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-	.kingpalm-adult-popup {
-		background: url("https://cdn.shopify.com/s/files/1/2283/0203/files/agecheck-667.jpg") no-repeat center center #555;
-		background-attachment: scroll;
-		background-attachment: scroll;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-/* Portrait */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-/* Landscape */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (-webkit-min-device-pixel-ratio: 1) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-@media only screen
-and (min-device-width: 1024px)
-and (max-device-width: 1366px) {
-	.kingpalm-adult-popup {
-		background: #000;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 9999999;
-	}
-}
-.modal-prompt select {
-	float: left;
-	margin-right: 10px;
 }
