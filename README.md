@@ -3,6 +3,7 @@ An adult confirmation module for [kingpalm.com](https://kingpalm.com).
 ## How to install
 ```
 bin/magento maintenance:enable
+rm -rf composer.lock
 composer clear-cache
 composer require kingpalm/adult:*
 bin/magento setup:upgrade
