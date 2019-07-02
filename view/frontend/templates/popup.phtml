@@ -1,17 +1,19 @@
-<div id="prompt-background">
-	<div id="age-check-prompt" class="modal-prompt">
-		<img src="<?php echo $this->getViewFileUrl('images/blk-logo.png'); ?>"
-			 style="display: block;padding-bottom: 20px;margin: auto;"/>
-		<h4 style="text-align: left; font-size: 15px; margin-bottom: 10px; color: rgb(0, 0, 0);">Click Enter only if you
+<div id='prompt-background'>
+	<div class='modal-prompt' id='age-check-prompt'>
+		<img
+			src='<?php echo $this->getViewFileUrl('images/blk-logo.png'); ?>'
+			style='display: block;padding-bottom: 20px;margin: auto;'
+		/>
+		<h4 style='text-align: left; font-size: 15px; margin-bottom: 10px; color: rgb(0, 0, 0);'>Click Enter only if you
 			are at least 18 years of age.</h4>
 		<ul>
 			<li>Adult signature required upon delivery.</li>
 			<li>All products for tobacco and legal herbs use only.</li>
 		</ul>
-		<button id="submit_birthdate" class="action login primary" onclick="ageCheck()" style="display:inline-block">
+		<button id='submit_birthdate' class='action login primary' onclick='ageCheck()' style='display:inline-block'>
 			<span>Enter</span></button>
-		<span style="padding: 0 4px">or</span>
-		<a href="https://google.com/" id="button-exit" name="button-exit" style="color: #5a9842;">Exit</a>
+		<span style='padding: 0 4px'>or</span>
+		<a href='https://google.com/' id='button-exit' name='button-exit' style='color: #5a9842;'>Exit</a>
 	</div>
 </div>
 <script>
