@@ -8,49 +8,24 @@
 			<li>Adult signature required upon delivery.</li>
 			<li>All products for tobacco and legal herbs use only.</li>
 		</ul>
-		<div style="display:none;">
-			<select name="bmonth" id="bmonth" value="1">
-
-			</select>
-			<select name="bday" id="bday" value="1">
-
-			</select>
-			<select name="byear" id="byear" value="1950">
-
-			</select>
-			<div style="clear:both; margin-bottom:15px"></div>
-		</div>
 		<button id="submit_birthdate" class="action login primary" onclick="ageCheck()" style="display:inline-block">
 			<span>Enter</span></button>
 		<span style="padding: 0 4px">or</span>
 		<a href="https://google.com/" id="button-exit" name="button-exit" style="color: #5a9842;">Exit</a>
 	</div>
 </div>
-
 <script>
 	function ageCheck () {
-		var min_age = 18;  // Set the minimum age.
-		var year = parseInt (document.getElementById ('byear').value);
-		var month = parseInt (document.getElementById ('bmonth').value);
-		var day = parseInt (document.getElementById ('bday').value);
-		var theirDate = new Date(year + min_age, month, day);
-		var today = new Date;
-		if (0 > today.getTime () - theirDate.getTime ()) {
-			//enter domain url where you would like the underaged visitor to be sent to.
-			window.location = 'https://google.com';
-		}
-		else {
-			var days = 14; //number of days until they must go through the age checker again.
-			var date = new Date ();
-			date.setTime (date.getTime () + days * 24 * 60 * 60 * 1000);
-			var expires = "; expires=" + date.toGMTString ();
-			document.cookie = 'isAnAdult=true;' + expires + "; path=/";
-			location.reload ();
-		}
+		var days = 14; //number of days until they must go through the age checker again.
+		var date = new Date;
+		date.setTime (date.getTime() + days * 24 * 60 * 60 * 1000);
+		var expires = "; expires=" + date.toGMTString ();
+		document.cookie = 'isAnAdult=true;' + expires + "; path=/";
+		location.reload();
 	}
-	function readCookie (name) {
-		var nameEQ = name + "=";
-		var ca = document.cookie.split (';');
+	function readCookie() {
+		var nameEQ = 'isAnAdult=';
+		var ca = document.cookie.split(';');
 		for (var i = 0; i < ca.length; i++) {
 			var c = ca[i];
 			while (c.charAt (0) == ' ') {
@@ -62,8 +37,7 @@
 		}
 		return null;
 	}
-	var isAnAdult = readCookie ('isAnAdult');
-	if (isAnAdult) {
+	if (readCookie()) {
 		document.write("<style> #prompt-background {display: none;}</style>");
 	}
 </script>
