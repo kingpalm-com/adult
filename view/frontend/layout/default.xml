@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<page 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+	<body>
+<!-- 2019-07-02
+"Request the «I am at least 18 years old» confirmation from visitors as on swishersweets.com":
+https://github.com/kingpalm-com/core/issues/8 -->
+		<referenceContainer name='before.body.end'>
+			<block
+				class='Magento\Framework\View\Element\Template'
+				template='Magento_Theme::html/adult_popup.phtml'
+			/>
+		</referenceContainer>
+	</body>
+</page>
