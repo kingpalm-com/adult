@@ -3,48 +3,30 @@
 // https://github.com/kingpalm-com/core/issues/8
 .kingpalm-adult-popup {
 	background: #000; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 9999999;
-	button.btn-checkout span, button.btn-checkout span:hover {
-		background-color: #5a9842 !important;
-		border-color: #5a9842 !important;
-	}
-	#age-check-prompt > ul li {
-		font-size: 14px;
-		list-style: outside none disc;
-		margin-bottom: 0px;
-		color: #000000;
-	}
-	.modal-prompt .action.login.primary {
-		background: #5a9842 none repeat scroll 0 0;
-		border-radius: 0 !important;
-		font-size: 17px;
-	}
-	.modal-prompt .action.login.primary:hover {
-		color: #ffffff;
-	}
-	@media (max-width: 479px) {
-		.modal-prompt {
-			width: 90% !important;
-			top: 15%;
-		}
-	}
-	.modal-prompt {
+	.kp-internal {
 		background: rgba(255, 255, 255, 0.9);
 		border-radius: 2px;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-		width: 400px;
 		height: auto;
 		margin: 0 auto;
 		padding: 20px 35px 30px 35px;
 		position: relative;
-		top: 25%;
-		z-index: 1000000;
 		right: 0%;
-	}
-	.modal-prompt p, .modal-prompt h1 {
-		color: #555555;
-	}
-	.modal-prompt select {
-		float: left;
-		margin-right: 10px;
+		top: 25%;
+		width: 400px;
+		z-index: 1000000;
+		@media (max-width: 479px) {top: 15%; width: 90% !important;}
+		.action.login.primary {
+			background: #5a9842 none repeat scroll 0 0;
+			border-radius: 0 !important;
+			font-size: 17px;
+			&:hover {color: #ffffff;}
+		}
+		button.btn-checkout span, button.btn-checkout span:hover {
+			background-color: #5a9842 !important; border-color: #5a9842 !important;
+		}
+		> ul li {color: #000000; font-size: 14px; list-style: outside none disc; margin-bottom: 0px;}
+		h1, p {color: #555555;}
+		select {float: left; margin-right: 10px;}
 	}
 }
