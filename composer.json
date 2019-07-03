@@ -1,6 +1,6 @@
 {
 	"name": "kingpalm/adult"
-	,"version": "0.0.1"
+	,"version": "0.0.2"
 	,"description": "An adult confirmation module for kingpalm.com"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/kingpalm-com/adult"
@@ -11,7 +11,7 @@
 		,"homepage": "https://mage2.pro/users/dmitry_fedyuk"
 		,"role": "Developer"
 	}]
-	,"require": {"mage2pro/core": ">=4.8.8"}
+	,"require": {"mage2pro/core": ">=4.8.9"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"KingPalm\\Adult\\": ""}}
 	,"keywords": ["Magento 2"]
 }

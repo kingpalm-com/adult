@@ -6,35 +6,9 @@
 			<li>Adult signature required upon delivery.</li>
 			<li>All products for tobacco and legal herbs use only.</li>
 		</ul>
-		<button class='action primary' onclick='ageCheck()'>
+		<button class='action primary'>
 			<span>Enter</span>
 		</button><span>or</span><a href='https://google.com'>Exit</a>
 	</div>
 </div>
-<script>
-	function ageCheck () {
-		var days = 14; //number of days until they must go through the age checker again.
-		var date = new Date;
-		date.setTime (date.getTime() + days * 24 * 60 * 60 * 1000);
-		var expires = "; expires=" + date.toGMTString ();
-		document.cookie = 'isAnAdult=true;' + expires + "; path=/";
-		location.reload();
-	}
-	function readCookie() {
-		var nameEQ = 'isAnAdult=';
-		var ca = document.cookie.split(';');
-		for (var i = 0; i < ca.length; i++) {
-			var c = ca[i];
-			while (c.charAt (0) == ' ') {
-				c = c.substring (1, c.length);
-			}
-			if (c.indexOf (nameEQ) == 0) {
-				return c.substring (nameEQ.length, c.length);
-			}
-		}
-		return null;
-	}
-	if (readCookie()) {
-		document.write("<style>.kingpalm-adult-popup {display: none;}</style>");
-	}
-</script>
+<?= df_js_x('.kingpalm-adult-popup', 'KingPalm_Adult'); ?>
