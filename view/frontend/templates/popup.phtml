@@ -7,8 +7,12 @@
 			<li>Adult signature required upon delivery.</li>
 			<li>All products for tobacco and legal herbs use only.</li>
 		</ul>
-		<h4>Please verify your age</h4>
-		<?= df_cc_n($b->cb('18', 'I am at least 18 years old'), $b->cb('remember', 'Remember me')) ?>
+		<div class='verify'>
+			<h4>Please verify your age:</h4>
+			<?= df_cc_n(
+				$b->cb('18', 'I am at least 18 years old'), $b->cb('remember', 'Remember me')
+			) ?>
+		</div>
 		<button class='action primary'>
 			<span>Enter</span>
 		</button><span>or</span><a href='https://google.com'>Exit</a>

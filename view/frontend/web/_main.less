@@ -9,7 +9,7 @@
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 		height: auto;
 		margin: 0 auto;
-		padding: 20px 35px 30px 35px;
+		padding: 1.75em; padding-top: 1em;
 		position: relative;
 		right: 0%;
 		top: 25%;
@@ -24,11 +24,28 @@
 			font-size: 17px;
 			&:hover {color: #ffffff;}
 		}
-		h4 {color: rgb(0, 0, 0); font-size: 15px; margin-bottom: 10px; text-align: left;}
+		h4 {color: rgb(0, 0, 0); font-size: 15px; margin: 0 0 0.5em 0; text-align: left;}
 		img {display: block; margin: auto; padding-bottom: 20px;}
-		li {color: #000000; font-size: 14px; list-style: outside none disc; margin-bottom: 0px;}
+		ul {
+			padding-left: 1em;
+			li {
+				color: #000000;
+				font-size: 14px;
+				list-style-position: inside;
+				list-style-type: disc;
+				margin-bottom: 0px;
+			}
+		}
 		span {padding: 0 4px;}
-		.df-field input[type=checkbox] {top: 2px;}
+		.verify {
+			margin: 1em 0;
+			h4 {margin-bottom: 0.25em;}
+			.df-field {
+				padding-left: 1em;
+				input[type=checkbox] {top: 2px;}
+				label {margin-bottom: 0;}
+			}
+		}
 	}
 }
 button.btn-checkout span, button.btn-checkout span:hover {
