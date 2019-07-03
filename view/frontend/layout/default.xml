@@ -8,7 +8,7 @@
 "Request the «I am at least 18 years old» confirmation from visitors as on swishersweets.com":
 https://github.com/kingpalm-com/core/issues/8 -->
 		<referenceContainer name='before.body.end'>
-			<block class='Magento\Framework\View\Element\Template' template='KingPalm_Adult::popup.phtml'/>
+			<block class='KingPalm\Adult\Block\Popup' template='KingPalm_Adult::popup.phtml'/>
 		</referenceContainer>
 	</body>
 </page>
