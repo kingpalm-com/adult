@@ -1,19 +1,33 @@
 // 2019-07-03
 define(['jquery', 'domReady!'], function($) {return (
 /**
- * 2019-06-02
  * @param {Object} c
  * @param {HTMLDivElement} e
  */
 function(c, e) {
 	var $e = $(e);
+	//var $18 = $('#kingpalm_adult_18');
+	//$18.closest('.df-field').addClass('kp-invalid');
 	$('button', $e).click(function() {
-		var days = 14; //number of days until they must go through the age checker again.
-		var date = new Date;
-		date.setTime (date.getTime() + days * 24 * 60 * 60 * 1000);
-		var expires = "; expires=" + date.toGMTString ();
-		document.cookie = 'isAnAdult=1;' + expires + "; path=/";
-		location.reload();
+		var $18 = $('#kingpalm_adult_18');
+		if (!$18.is(':checked')) {
+			$18.closest('.df-field').addClass('kp-invalid');
+		}
+		else {
+			var parts = ['isAnAdult=1', 'path=/'];
+			// 2019-07-03
+			// «when no expiration date is set, a cookie is cleared when the user closes the browser»
+			// https://stackoverflow.com/a/1783307
+			if ($('#kingpalm_adult_remember').is(':checked')) {
+				var days = 365;
+				var date = new Date;
+				date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+				var expires = 'expires=' + date.toGMTString();
+				parts.splice(1, 0, expires);
+			}
+			document.cookie = parts.join('; ');
+			location.reload();
+		}
 	});
 	(function() {
 		var isAnAdult = function() {
