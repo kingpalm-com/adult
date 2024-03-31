@@ -1,4 +1,4 @@
-An adult confirmation module for [kingpalm.com](https://kingpalm.com).
+An adult confirmation module for [kingpalm.com](https://kingpalm.com) (Magento 2).
 
 ## How to install
 ```
